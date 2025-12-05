@@ -1,106 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Page</title>
+    <title>متجر الأناقة | تسوق للأزياء والعطور والإكسسوارات</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <img src="images/image-omelette.jpeg" alt="image-omelette">
-        <div class="generalContainer">
-            <h1 id="simple_omellette">Simple Omelette Recipe</h1>
-            <p>An easy and quick dish, perfect for any meal.This classic omellete combines beathen eggs cooked to
-                perfection,optionally filled with your choice of cheese ,vegetables, or meats.</p>
-            <div class="rose">
-                <h3> Preparation Time</h3>
-                <ul class="Preparation">
-                    <li><strong>Total:</strong> Approximately 10 minutes</li>
-                    <li><strong>Preparation:</strong> 5 minutes</li>
-                    <li><strong>Cooking:</strong> 5 minutes</li>
-
-                </ul>
+    <header class="topbar">
+        <div class="brand">متجر الأناقة</div>
+        <nav class="main-nav">
+            <a href="#categories">التصنيفات</a>
+            <a href="#featured">العروض المميزة</a>
+            <a href="#benefits">لماذا نحن</a>
+            <a href="#app">تطبيق الجوال</a>
+        </nav>
+        <div class="header-actions">
+            <div class="search">
+                <input type="text" placeholder="ابحث عن منتج أو علامة تجارية" aria-label="بحث">
+                <span class="material-icon">🔍</span>
             </div>
-            <hr>
-
-            <div class="Ingredients">
-                <h1>Ingredients</h1>
-                <ul class="Ingredients_ul">
-                    <li>2-3 large eggs</li>
-                    <li>Salt, to taste</li>
-                    <li>Pepper, to taste</li>
-                    <li>1 tablespoon of butter or oil</li>
-                    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-                </ul>
-            </div>
-
-            <div class="instructions">
-                <h1>Instructions</h1>
-                <ol class="instructions_ul">
-                    <li><strong>Beat the eggs:</strong>In a bowl, beat the eggs with a pinch of salt and pepper until
-                        they
-                        are
-                        well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
-                    <li><strong> Heat the pan:</strong>Place a non-stick frying pan over medium heat and add butter or
-                        oil.
-                        Cook
-                        the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
-                        the
-                        eggs
-                        evenly coat the surface. </li>
-                    <li><strong> Add fillings (optional):</strong>When the eggs begin to set at the edges but are still
-                        slightly
-                        runny in the middle, sprinkle your chosen fillings over one half of the omelette. Fold and
-                        serve: As
-                        the
-                        omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook
-                        for
-                        another minute, then slide it onto a plate. </li>
-                    <li><strong> Enjoy:</strong>Serve hot, with additional salt and pepper if needed.</li>
-
-
-
-                </ol>
-            </div>
-            <hr>
-            <div class="Nutrition">
-                <h1> Nutrition</h1>
-                <p>The table below shows nutritional values per serving without the additional fillings</p>
-            </div>
-            
-            <div class="table_container">
-                <table>
-                    <tr>
-                        <td>Calories </td>
-                        <td>277kcal</td>
-
-                    </tr>
-
-                    <tr>
-                        <td>Carbs </td>
-                        <td>0g</td>
-                    </tr>
-
-                    <tr>
-                        <td>Protein</td>
-                        <td>20g</td>
-                    </tr>
-                    <tr>
-                        <td>Fat </td>
-                        <td>22g</td>
-                    </tr>
-                </table>
-            </div>
-
-
+            <button class="primary ghost">تسجيل الدخول</button>
+            <button class="primary">عربة التسوق</button>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">تجربة تسوق راقية تشبه Target ولكن بطابع عربي</p>
+                <h1>كل ما تحتاجه لعائلتك في مكان واحد</h1>
+                <p class="lead">من العبايات الفاخرة إلى العطور الفريدة، نوفر تشكيلة واسعة بأسعار تنافسية، مع تجربة تصفح سريعة وشحن موثوق.</p>
+                <div class="cta-row">
+                    <a class="primary" href="#categories">ابدأ التسوق الآن</a>
+                    <a class="ghost" href="#app">اعرف المزيد عن خطتنا للتطبيق</a>
+                </div>
+                <div class="service-tags">
+                    <span>شحن سريع</span>
+                    <span>الدفع عند الاستلام</span>
+                    <span>دعم مباشر بالعربية</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="promo-card">
+                    <p class="badge">جديد</p>
+                    <h3>عروض موسمية على العبايات</h3>
+                    <p>تخفيضات تصل إلى <strong>35%</strong> على أحدث التصاميم.</p>
+                    <button class="primary">تصفح العروض</button>
+                </div>
+                <div class="stats">
+                    <div>
+                        <p class="number">+120k</p>
+                        <p>منتج متنوع</p>
+                    </div>
+                    <div>
+                        <p class="number">4.9/5</p>
+                        <p>رضا العملاء</p>
+                    </div>
+                    <div>
+                        <p class="number">24/7</p>
+                        <p>خدمة العملاء</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="benefits">
+            <div class="benefit-card">
+                <div class="icon">🚚</div>
+                <h3>توصيل سريع وآمن</h3>
+                <p>شركاؤنا اللوجستيون يضمنون وصول الطلبات خلال 1-3 أيام عمل مع تتبع كامل.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">🛡️</div>
+                <h3>مدفوعات موثوقة</h3>
+                <p>طرق دفع متعددة تشمل بطاقات الائتمان، Apple Pay، والدفع عند الاستلام.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">🎁</div>
+                <h3>عروض عضوية</h3>
+                <p>برنامج ولاء يمنح نقاطًا مع كل عملية شراء لاستبدالها بخصومات حصرية.</p>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <div class="section-header">
+                <p class="eyebrow">التصنيفات الرئيسية</p>
+                <h2>تسوق حسب القسم</h2>
+                <p class="lead">تصميم مستوحى من سهولة Target مع إبراز الهوية العربية.</p>
+            </div>
+            <div class="grid">
+                <article class="card">
+                    <h3>عبايات وشيلات</h3>
+                    <p>مجموعة متنوعة من القصات والألوان المناسبة لكل مناسبة.</p>
+                    <button class="ghost">تصفح المجموعة</button>
+                </article>
+                <article class="card">
+                    <h3>مخاويير وفساتين</h3>
+                    <p>فساتين عصرية ومخاويير مريحة مستوحاة من أحدث الصيحات.</p>
+                    <button class="ghost">تصفح المجموعة</button>
+                </article>
+                <article class="card">
+                    <h3>اقمشة</h3>
+                    <p>أقمشة فاخرة للخياطة والتفصيل بجودة عالية وأسعار تنافسية.</p>
+                    <button class="ghost">تصفح المجموعة</button>
+                </article>
+                <article class="card">
+                    <h3>ساعات واكسسوارات</h3>
+                    <p>ساعات أنيقة وإكسسوارات تكمل إطلالتك اليومية أو الرسمية.</p>
+                    <button class="ghost">تصفح المجموعة</button>
+                </article>
+                <article class="card">
+                    <h3>شنط وشوزات</h3>
+                    <p>حقائب وأحذية مميزة تناسب الذوق الخليجي والعالمي.</p>
+                    <button class="ghost">تصفح المجموعة</button>
+                </article>
+                <article class="card">
+                    <h3>عطور ومايكاب وكريمات</h3>
+                    <p>عطور فاخرة ومستحضرات تجميل وعناية بالبشرة من أفضل الماركات.</p>
+                    <button class="ghost">تصفح المجموعة</button>
+                </article>
+                <article class="card">
+                    <h3>آخرى</h3>
+                    <p>منتجات منزلية وهدايا موسمية تلبي احتياجاتك اليومية.</p>
+                    <button class="ghost">تصفح المجموعة</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <div class="section-header">
+                <p class="eyebrow">عروض مختارة</p>
+                <h2>منتجات مقترحة لك</h2>
+            </div>
+            <div class="grid products">
+                <article class="product-card">
+                    <div class="pill">خصم 30%</div>
+                    <h3>عباية كريب ملكي</h3>
+                    <p>خياطة فاخرة مع تطريز يدوي.</p>
+                    <p class="price">299 ر.س</p>
+                    <button class="primary">أضف للسلة</button>
+                </article>
+                <article class="product-card">
+                    <div class="pill">جديد</div>
+                    <h3>عطر شرقي فاخر</h3>
+                    <p>نفحات عود وبخور تدوم طوال اليوم.</p>
+                    <p class="price">189 ر.س</p>
+                    <button class="primary">أضف للسلة</button>
+                </article>
+                <article class="product-card">
+                    <div class="pill">الأكثر مبيعًا</div>
+                    <h3>حقيبة جلد طبيعية</h3>
+                    <p>تصميم عملي مع مساحة واسعة.</p>
+                    <p class="price">249 ر.س</p>
+                    <button class="primary">أضف للسلة</button>
+                </article>
+                <article class="product-card">
+                    <div class="pill">عرض محدود</div>
+                    <h3>ساعة أنالوج كلاسيكية</h3>
+                    <p>مقاومة للماء بضمان سنتين.</p>
+                    <p class="price">329 ر.س</p>
+                    <button class="primary">أضف للسلة</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="app" class="app-section">
+            <div class="section-header">
+                <p class="eyebrow">جاهزية المستقبل</p>
+                <h2>تطبيق جوال متكامل قادم قريبًا</h2>
+                <p class="lead">تم بناء المنصة بواجهة ويب سريعة الاستجابة مع بنية جاهزة للربط بواجهات برمجة تطبيقات (API) تخدم تطبيقات iOS و Android مستقبلاً.</p>
+            </div>
+            <div class="app-grid">
+                <div>
+                    <h3>تقنيات مقترحة</h3>
+                    <ul>
+                        <li><strong>الواجهة:</strong> Next.js أو React مع Tailwind CSS لتجربة مشابهة لـ Target.</li>
+                        <li><strong>الخلفية:</strong> Node.js (NestJS) أو Laravel مع قواعد بيانات PostgreSQL.</li>
+                        <li><strong>البنية:</strong> API-first و GraphQL/REST لدعم تطبيقات الجوال لاحقًا.</li>
+                        <li><strong>الأمان:</strong> بوابة دفع موثوقة، مصادقة متعددة العوامل، وحماية ضد الاحتيال.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>منصة النشر</h3>
+                    <ul>
+                        <li><strong>الاستضافة:</strong> Vercel أو Netlify للواجهة، مع إمكانية استخدام AWS أو DigitalOcean للباك-إند.</li>
+                        <li><strong>التدرجية:</strong> بنية سحابية قابلة للتوسع مع CDN لتسريع التحميل في المنطقة.</li>
+                        <li><strong>التطبيقات:</strong> بناء تطبيقات React Native أو Flutter مرتبطة بنفس الـ API.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h4>متجر الأناقة</h4>
+            <p>علامة تجارية إلكترونية تقدم منتجات مختارة بعناية وبأسعار عادلة.</p>
+        </div>
+        <div>
+            <h4>روابط سريعة</h4>
+            <ul>
+                <li><a href="#categories">التصنيفات</a></li>
+                <li><a href="#featured">العروض</a></li>
+                <li><a href="#app">تطبيق الجوال</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>النشرة البريدية</h4>
+            <p>اشترك لتصلك آخر العروض الموسمية والإلهام اليومي.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني">
+                <button class="primary">اشترك</button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
